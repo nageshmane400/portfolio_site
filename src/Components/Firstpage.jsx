@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaInstagram, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FiDownload, FiMail } from "react-icons/fi";
-import image from "../assets/Logo.png";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -14,10 +13,10 @@ const roles = [
 ];
 
 const stats = [
-  { count: 1, suffix: ".8+", label: "Years Experience" },
+  { count: 1.5, suffix: "+", label: "Years Experience" },
   { count: 2, suffix: "+", label: "Companies" },
   { count: 2, suffix: "+", label: "Live Projects" },
-  { count: 100, suffix: "%", label: "Quality Focus" },
+  { count: 250, suffix: "+", label: "DSA Problems Solved" },
 ];
 
 function TypeWriter({ words }) {
@@ -57,10 +56,8 @@ function TypeWriter({ words }) {
 }
 
 const socialLinks = [
-  { icon: <FaInstagram size={16} />, href: "https://instagram.com/", label: "Instagram" },
-  { icon: <FaTwitter size={16} />, href: "https://twitter.com/", label: "Twitter" },
-  { icon: <FaGithub size={16} />, href: "https://github.com/mayurpawar1907", label: "GitHub" },
-  { icon: <FaLinkedinIn size={16} />, href: "https://www.linkedin.com/in/mayur-pawar-8246402b8/", label: "LinkedIn" },
+  { icon: <FaGithub size={16} />, href: "https://github.com/nagesh5454", label: "GitHub" },
+  { icon: <FaLinkedinIn size={16} />, href: "https://linkedin.com/in/nageshmane/", label: "LinkedIn" },
 ];
 
 export default function Firstpage() {
@@ -134,7 +131,7 @@ export default function Firstpage() {
               transition={{ delay: 0.42 }}
               className="mb-2 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl"
             >
-              Mayur Pawar
+              Nagesh Mane
             </motion.h1>
 
             <motion.div
@@ -152,11 +149,11 @@ export default function Firstpage() {
               transition={{ delay: 0.58 }}
               className="mb-6 max-w-lg text-sm leading-7 text-slate-300 sm:text-base sm:leading-8"
             >
-              Dynamic Full-Stack Developer with{" "}
-              <span className="font-bold text-cyan-300">1.8+ years of experience</span> building
-              responsive, scalable web applications. Skilled in React.js, Next.js, Node.js,
-              Express.js, SQL/MySQL, and Tailwind CSS — delivering production-grade platforms for
-              real clients across India and the USA.
+              Software Developer with{" "}
+              <span className="font-bold text-cyan-300">1.5+ year of hands-on experience</span> building
+              full-stack web applications with the MERN stack. Experienced in React.js, Node.js,
+              Express.js, REST APIs, and Redux Toolkit, with working exposure to Next.js, Nest.js,
+              PostgreSQL, Docker, and Prisma.
             </motion.p>
 
             {/* Social icons */}
@@ -193,8 +190,8 @@ export default function Firstpage() {
               <motion.a
                 whileHover={{ scale: 1.05, y: -3, boxShadow: "0 0 32px rgba(0,240,255,0.55)" }}
                 whileTap={{ scale: 0.95 }}
-                href="/Mayur's_Resume.pdf"
-                download="Mayur-Pawar-Resume.pdf"
+                href="/NageshMane_Resume.pdf"
+                download="NageshMane_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-2.5 text-sm font-bold text-black shadow-[0_0_20px_rgba(0,240,255,0.3)] transition hover:bg-cyan-300 sm:px-7 sm:py-3"
               >
                 <FiDownload /> Download CV
@@ -238,8 +235,8 @@ export default function Firstpage() {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 />
                 <img
-                  src={image}
-                  alt="Mayur Pawar"
+                  src="/nageshPhoto.png"
+                  alt="Nagesh Mane"
                   className="relative  bottom z-20 h-full w-full object-contain object-center"
                 />
               </motion.div>
@@ -256,7 +253,7 @@ export default function Firstpage() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400 sm:text-sm"
         >
-          Full-Stack Developer · 1.8+ Years Experience · Pune, India
+          Software Developer · 1.5+ Year Experience · Pune, India
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
@@ -264,7 +261,7 @@ export default function Firstpage() {
           transition={{ duration: 0.9, delay: 0.45 }}
           className="mt-3 text-2xl font-black text-white sm:text-3xl md:text-4xl"
         >
-          React &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; SQL
+          React.js &nbsp;·&nbsp;Next.js &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; MongoDB &nbsp;·&nbsp; PostgreSQL
         </motion.h2>
       </div>
 
@@ -284,7 +281,13 @@ export default function Firstpage() {
           >
             <h3 className="text-2xl font-black text-cyan-400 sm:text-3xl">
               {statsInView && (
-                <CountUp start={0} end={item.count} duration={2.2} suffix={item.suffix} />
+                <CountUp
+                  start={0}
+                  end={item.count}
+                  decimals={Number.isInteger(item.count) ? 0 : 1}
+                  duration={2.2}
+                  suffix={item.suffix}
+                />
               )}
             </h3>
             <p className="mt-2 text-xs font-medium text-slate-400 sm:text-sm">{item.label}</p>

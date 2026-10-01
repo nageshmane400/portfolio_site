@@ -7,16 +7,16 @@ const contactLinks = [
   {
     icon: <FiMail />,
     label: "Email",
-    value: "mayurpawar1907@gmail.com",
-    href: "mailto:mayurpawar1907@gmail.com",
+    value: "nageshmane400@gmail.com",
+    href: "mailto:nageshmane400@gmail.com",
     color: "text-cyan-300",
     bg: "bg-cyan-300/10",
   },
   {
     icon: <FiPhone />,
     label: "Phone",
-    value: "+91-8686722302",
-    href: "tel:+918686722302",
+    value: "+91-9623699284",
+    href: "tel:+919623699284",
     color: "text-emerald-300",
     bg: "bg-emerald-300/10",
   },
@@ -24,15 +24,15 @@ const contactLinks = [
     icon: <FiLinkedin />,
     label: "LinkedIn",
     value: "Connect professionally",
-    href: "https://www.linkedin.com/in/mayur-pawar-8246402b8/",
+    href: "https://linkedin.com/in/nageshmane/",
     color: "text-sky-300",
     bg: "bg-sky-300/10",
   },
   {
     icon: <FiGithub />,
     label: "GitHub",
-    value: "github.com/mayurpawar1907",
-    href: "https://github.com/mayurpawar1907",
+    value: "github.com/nagesh5454",
+    href: "https://github.com/nagesh5454",
     color: "text-slate-200",
     bg: "bg-white/8",
   },
@@ -63,7 +63,7 @@ export default function Contact() {
     e.preventDefault();
     setSending(true);
     emailjs
-      .send("service_vn5tmti", "template_gh8mkea", formData, "IYEGKtO5QQu6w-khR")
+      .send("service_047n2tj", "template_gh8mkea", formData, "IYEGKtO5QQu6w-khR")
       .then(() => {
         showTooltip("Message sent successfully! I'll get back to you soon.", "success");
         setFormData({ name: "", email: "", message: "" });

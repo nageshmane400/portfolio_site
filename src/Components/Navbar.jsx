@@ -114,7 +114,7 @@ export default function Navbar() {
             <FiCode />
           </motion.span>
           <span className="leading-tight">
-            <span className="block text-sm font-black tracking-wide sm:text-base">Mayur Pawar</span>
+            <span className="block text-sm font-black tracking-wide sm:text-base">Nagesh Mane</span>
             <BouncingTitle />
           </span>
         </NavLink>

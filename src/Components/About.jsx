@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
   FiBriefcase, FiCode, FiDatabase, FiShield,
-  FiCalendar, FiMapPin, FiUser, FiHeart, FiGlobe,
+  FiCalendar, FiMapPin, FiUser, FiGlobe,
 } from "react-icons/fi";
 
 /* ── animation variants ── */
@@ -17,7 +17,7 @@ const strengths = [
   {
     icon: <FiCode />,
     title: "Frontend",
-    text: "React.js, Next.js, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap — responsive UIs, dashboards, and admin screens.",
+    text: "React.js, Next.js, Redux Toolkit, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, and Bootstrap for responsive interfaces.",
     color: "text-cyan-300",
     bg: "bg-cyan-300/10",
     border: "border-cyan-300/15",
@@ -25,7 +25,7 @@ const strengths = [
   {
     icon: <FiDatabase />,
     title: "Backend & Database",
-    text: "Node.js, Express.js, REST APIs, SQL, MySQL — CRUD operations, API optimisation, and secure data handling.",
+    text: "Node.js, Express.js, Nest.js, REST APIs, MongoDB, PostgreSQL, MySQL, Prisma, and SQL.",
     color: "text-emerald-300",
     bg: "bg-emerald-300/10",
     border: "border-emerald-300/15",
@@ -33,7 +33,7 @@ const strengths = [
   {
     icon: <FiShield />,
     title: "Auth & Security",
-    text: "JWT authentication, role-based access control, protected routes, and secure application modules.",
+    text: "Docker, Git, GitHub, Postman, VS Code, IntelliJ IDEA, and Figma; experienced with authentication and API integration.",
     color: "text-purple-300",
     bg: "bg-purple-300/10",
     border: "border-purple-300/15",
@@ -42,55 +42,52 @@ const strengths = [
 
 const experience = [
   {
-    company: "Senwell",
+    company: "Senwell Group",
     role: "Software Developer",
-    duration: "Oct 2024 – Present",
-    period: "~8 Months",
-    project: "Donorly",
+    duration: "Sep 2025 – Present",
+    period: "Current",
+    project: "Healthcare & US-based e-commerce",
     location: "Pune, India",
-    type: "Donor Management Platform · USA Client",
+    type: "Healthcare & US-Based E-commerce Platforms",
     summary:
-      "Developed and deployed a scalable donor management platform for a USA-based client focused on institutional and organisational fund management.",
+      "Worked on healthcare and US-based e-commerce platforms, owning end-to-end delivery of production features from React.js and Redux Toolkit UI implementation through Node.js and Express API design.",
     points: [
-      "Built responsive UIs using React.js, Next.js, JavaScript, HTML, CSS, and Tailwind CSS.",
-      "Developed scalable backend APIs using Node.js and Express.js.",
-      "Designed and managed SQL/MySQL databases for fund, donor, and organisation data.",
-      "Implemented authentication and role-based access control for secure user management.",
-      "Created dashboards and reporting modules for tracking institutional funds.",
-      "Integrated REST APIs and optimised performance for scalability and responsiveness.",
-      "Collaborated with cross-functional teams and clients to deliver business-focused solutions.",
+      "Designed REST APIs in Node.js and Express with validation, authentication, and backend service integration.",
+      "Built reusable, responsive React.js and Tailwind CSS components across product modules.",
+      "Worked with a cross-functional team using Git branches, pull requests, and code review.",
+      "Delivered assigned modules within sprint timelines.",
     ],
     accent: "cyan",
   },
   {
-    company: "Datapro",
-    role: "Full-Stack Developer",
-    duration: "July 2024 – Aug 2025",
-    period: "~13 Months",
-    project: "Skyfall",
+    company: "SiliconMount Tech Services Pvt. Ltd.",
+    role: "Software Developer Intern",
+    duration: "Jan 2025 – Jul 2025",
+    period: "7 Months",
+    project: "Frontend and API integration",
     location: "Pune, India",
-    type: "Event Management Platform",
+    type: "Frontend Development & API Integration",
     summary:
-      "Worked on an event management platform where administrators can create, manage, and track events for customers.",
+      "Built responsive React.js and Tailwind CSS components integrated with REST APIs to display dynamic, real-time data.",
     points: [
-      "Developed responsive frontend interfaces using React.js, Next.js, HTML, CSS, and Tailwind CSS.",
-      "Built scalable backend APIs using Node.js and Express.js.",
-      "Designed relational databases using SQL and MySQL for efficient data handling.",
-      "Implemented authentication, authorisation, and CRUD operations for event and user management.",
-      "Integrated real-time functionality and live data updates to enhance system responsiveness.",
-      "Optimised application performance, API handling, and database queries for scalability.",
-      "Collaborated with team members to deliver user-friendly solutions within project timelines.",
+      "Collaborated with senior developers to debug UI issues and improve component performance.",
+      "Reviewed pull requests and contributed to internal documentation.",
+      "Delivered UI features on schedule across multiple sprints.",
+      "Gained experience across the frontend-to-API integration lifecycle.",
     ],
     accent: "purple",
   },
 ];
 
 const personalAttributes = [
-  { icon: <FiCalendar />, label: "Date of Birth", value: "19 July 2003" },
-  { icon: <FiUser />, label: "Gender", value: "Male" },
-  { icon: <FiMapPin />, label: "Location", value: "Pune, India" },
-  { icon: <FiGlobe />, label: "Languages", value: "English, Marathi, Hindi" },
-  { icon: <FiHeart />, label: "Hobbies", value: "Playing Cricket, Reading Books" },
+  { icon: <FiMapPin />, label: "Location", value: "Pune, Maharashtra" },
+  { icon: <FiCalendar />, label: "B.Tech · Information Technology", value: "Dr. Babasaheb Ambedkar Technological University · Aug 2021 – Jul 2025" },
+  { icon: <FiUser />, label: "B.Tech Result", value: "CGPA: 7.87 / 10 · Raigad, Maharashtra" },
+  { icon: <FiCalendar />, label: "12th Standard · Science", value: "Mahatma Gandhi Junior College of Science · Jun 2020 – Mar 2021" },
+  { icon: <FiUser />, label: "12th Result", value: "93.33% · Karmala, Solapur" },
+  { icon: <FiCode />, label: "Coding Profiles", value: "200+ GeeksforGeeks · 100+ LeetCode" },
+  { icon: <FiGlobe />, label: "Certifications", value: "DSA in Java (Apna College) · Front-End Web Dev (Coursera) · MERN Stack (PhysicsWallah) · Full Stack Web Dev (Internshala)" },
+  { icon: <FiCode />, label: "Relevant Coursework", value: "OOP · DBMS · Operating Systems · Computer Networks · Software Engineering" },
 ];
 
 const accentMap = {
@@ -202,16 +199,15 @@ export default function AboutMe() {
             About Me
           </p>
           <h1 className="text-2xl font-black leading-tight sm:text-3xl lg:text-4xl xl:text-5xl">
-            Dynamic Full-Stack Developer with{" "}
-            <span className="text-cyan-400">1.8+ years</span> of experience building
-            responsive, scalable web applications.
+            Software Developer with{" "}
+            <span className="text-cyan-400">1.5+ year</span> of experience building
+            full-stack web applications.
           </h1>
           <p className="mt-5 text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
-            My name is <span className="font-bold text-cyan-200">Mayur Pawar</span>. I build
-            full-stack web applications using React.js, Next.js, Node.js, Express.js, SQL, MySQL,
-            and Tailwind CSS. Passionate about writing clean, efficient, and maintainable code
-            while collaborating with teams to deliver high-quality solutions that meet business
-            objectives and enhance user experience.
+            My name is <span className="font-bold text-cyan-200">Nagesh Mane</span>. I build
+            full-stack applications with the MERN stack and have working exposure to Next.js,
+            Nest.js, PostgreSQL, Docker, and Prisma. I have solved 250+ DSA problems across
+            LeetCode and GeeksforGeeks, and I enjoy taking features from UI implementation through API design.
           </p>
         </motion.div>
 
@@ -219,7 +215,7 @@ export default function AboutMe() {
         <motion.div variants={fadeUp} className="mt-5 flex flex-wrap gap-2 sm:gap-3">
           {[
             { icon: <FiMapPin size={12} />, text: "Pune, India" },
-            { icon: <FiCalendar size={12} />, text: "1.8+ Years Experience" },
+            { icon: <FiCalendar size={12} />, text: "1.5+ Year Experience" },
             { icon: <FiBriefcase size={12} />, text: "2 Companies" },
           ].map((pill) => (
             <span
@@ -256,7 +252,7 @@ export default function AboutMe() {
             <FiBriefcase className="text-2xl text-cyan-300" />
             <h2 className="text-xl font-black text-white sm:text-2xl">Work Experience</h2>
             <span className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-200">
-              1.8+ Years
+              1.5+ Year
             </span>
           </motion.div>
 
@@ -277,7 +273,7 @@ export default function AboutMe() {
         >
           <div className="mb-6 flex items-center gap-3">
             <FiUser className="text-2xl text-cyan-300" />
-            <h2 className="text-xl font-black text-white sm:text-2xl">Personal Attributes</h2>
+            <h2 className="text-xl font-black text-white sm:text-2xl">Education &amp; Profiles</h2>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
@@ -295,7 +291,7 @@ export default function AboutMe() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">{attr.label}</p>
-                  <p className="mt-0.5 truncate text-sm font-bold text-white sm:text-base">{attr.value}</p>
+                  <p className="mt-0.5 text-sm font-bold text-white sm:text-base">{attr.value}</p>
                 </div>
               </motion.div>
             ))}

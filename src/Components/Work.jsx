@@ -6,81 +6,54 @@ import { FiArrowUpRight, FiLayers, FiCalendar, FiMapPin } from "react-icons/fi";
 /* ── data from resume ── */
 const projects = [
   {
-    name: "Donorly",
-    company: "Senwell",
-    role: "Software Developer",
-    duration: "Oct 2024 – Present",
-    period: "~8 Months",
-    location: "Pune, India · USA Client",
-    type: "Donor Management Platform",
-    url: "https://donorly.ai/en",
-    description:
-      "Developed and deployed a scalable donor management platform for a USA-based client, focused on managing institutional and organisational funds efficiently. The application includes secure fund tracking, donor and organisation management, role-based authentication, real-time data handling, and responsive dashboards built using React.js, Next.js, Node.js, Express.js, SQL, and MySQL.",
-    tags: ["React.js", "Next.js", "Node.js", "Express.js", "SQL", "MySQL", "Tailwind CSS", "JWT"],
-    responsibilities: [
-      "Developed responsive and dynamic user interfaces using React.js, Next.js, JavaScript, HTML, CSS, and Tailwind CSS.",
-      "Built scalable backend APIs and server-side functionalities using Node.js and Express.js.",
-      "Designed and managed SQL/MySQL databases for secure fund, donor, and organisation data management.",
-      "Implemented authentication and role-based access control for secure user management.",
-      "Developed dashboards and reporting modules for tracking institutional and organisational funds.",
-      "Integrated REST APIs and optimised application performance for scalability and responsiveness.",
-      "Collaborated with cross-functional teams and clients to deliver business-focused solutions.",
-    ],
-    accent: "cyan",
-  },
-  {
-    name: "Skyfall",
-    company: "Datapro",
+    name: "ClassWave — The Learning Ecosystem",
+    company: "Personal Project",
     role: "Full-Stack Developer",
-    duration: "July 2024 – Aug 2025",
-    period: "~13 Months",
+    duration: "Mar 2025",
+    period: "MERN Stack",
     location: "Pune, India",
-    type: "Event Management Platform",
+    type: "Learning Platform",
     url: null,
     description:
-      "An event management platform where administrators can create and manage events for customers. The platform features high-performance dashboards, secure authentication, real-time event tracking, and scalable event management functionalities built with React.js, Next.js, Node.js, Express.js, SQL, and MySQL, delivering seamless user experiences and efficient administrative control.",
-    tags: ["React.js", "Next.js", "Node.js", "Express.js", "SQL", "MySQL", "Tailwind CSS"],
+      "Built a full-stack learning platform where students enroll in courses, track progress, and complete assessments, while instructors create and manage courses and learning resources.",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux Toolkit"],
     responsibilities: [
-      "Developed responsive and interactive frontend interfaces using React.js, Next.js, HTML, CSS, JavaScript, and Tailwind CSS.",
-      "Built scalable backend APIs and server-side functionalities using Node.js and Express.js.",
-      "Designed and managed relational databases using SQL and MySQL for efficient data handling and storage.",
-      "Implemented authentication, authorisation, and CRUD operations for event and user management.",
-      "Integrated real-time functionalities and live data updates to enhance user experience and system responsiveness.",
-      "Optimised application performance, API handling, and database queries for better scalability and maintainability.",
-      "Collaborated with team members to deliver high-quality and user-friendly web solutions within project timelines.",
-    ],
-    accent: "purple",
-  },
-  {
-    name: "chicken99",
-    company: "Personal Project",
-    role: "Frontend Developer",
-    duration: "2024",
-    period: "~3 Months",
-    location: "Remote",
-    type: "Food Ordering App (Frontend)",
-    url: "https://www.chicken99.in/",
-    description:
-      "Built the frontend for Chicken99, a food ordering application. Implemented responsive UI, menus, cart interactions, and client-side routing using HTML, CSS, JavaScript, React.js, and Next.js.",
-    tags: ["HTML", "CSS", "JavaScript", "React.js", "Next.js"],
-    responsibilities: [
-      "Implemented responsive layouts and design using HTML and CSS.",
-      "Built interactive UI components with JavaScript and React.js.",
-      "Implemented client-side routing and page structure using Next.js.",
-      "Integrated menu listing, cart functionality, and form validation on the frontend.",
-      "Optimized UI for mobile and desktop and improved frontend performance.",
+      "Implemented student and instructor role-based views and permissions in one codebase.",
+      "Used Redux Toolkit for shared state across enrollment, progress tracking, and assessments.",
+      "Structured reusable application components to support future growth.",
+      "Built course creation, learning resource, assessment, and progress workflows.",
     ],
     accent: "cyan",
+  },
+  {
+    name: "JobConnect",
+    company: "Personal Project",
+    role: "Full-Stack Developer",
+    duration: "Apr 2024",
+    period: "MERN Stack · JWT Auth",
+    location: "Pune, India",
+    type: "Job Platform",
+    url: null,
+    description:
+      "Built a job platform for candidates to apply for jobs, track application status, and receive real-time updates, with recruiter tools to post jobs and manage applications.",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
+    responsibilities: [
+      "Created candidate workflows for job applications and status tracking.",
+      "Built recruiter dashboards to post jobs and manage incoming applications.",
+      "Implemented JWT authentication and authorization for candidate and recruiter roles.",
+      "Designed and deployed a responsive MERN application for production use.",
+    ],
+    accent: "purple",
   },
 ];
 
 const overviewPoints = [
-  "Frontend development with React.js, Next.js, JavaScript, HTML, CSS, Tailwind CSS, and Bootstrap.",
-  "Backend development with Node.js, Express.js, REST APIs, authentication, authorisation, and CRUD operations.",
-  "Database work with SQL and MySQL for donor, fund, organisation, event, customer, and user data.",
-  "Dashboard and reporting modules for fund tracking, event tracking, admin control, and live data updates.",
-  "Performance optimisation for API handling, database queries, scalability, responsiveness, and maintainability.",
-  "Team collaboration, client communication, Git/GitHub workflow, debugging, and delivery within timelines.",
+  "ClassWave course enrollment, progress tracking, instructor tools, and student assessments.",
+  "Role-based student and instructor workflows with Redux Toolkit state management.",
+  "JobConnect candidate applications, application status tracking, and real-time updates.",
+  "Recruiter job posting and application management dashboards.",
+  "JWT authentication and authorization for candidate and recruiter roles.",
+  "MERN stack development with MongoDB, Express.js, React.js, Node.js, and Redux Toolkit.",
 ];
 
 const accentMap = {
@@ -241,8 +214,8 @@ export default function ProjectOverview() {
               Work &amp; Projects
             </p>
             <h1 className="text-2xl font-black leading-tight sm:text-3xl lg:text-4xl xl:text-5xl">
-              Production projects from{" "}
-              <span className="text-cyan-400">1.8+ years</span> of full-stack development.
+              Full-stack projects built with the{" "}
+              <span className="text-cyan-400">MERN stack</span> and Redux Toolkit.
             </h1>
           </div>
           <motion.a
@@ -273,7 +246,7 @@ export default function ProjectOverview() {
             Full Responsibility Overview
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-            A complete summary of all responsibility areas across 1.8+ years of full-stack development.
+            Project features spanning student learning workflows, job applications, and role-based dashboards.
           </p>
 
           <ul className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2 sm:gap-4">

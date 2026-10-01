@@ -1,19 +1,21 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaBootstrap, FaCss3Alt, FaGitAlt, FaHtml5, FaJsSquare, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiExpress, SiJsonwebtokens, SiMysql, SiNextdotjs, SiPostman, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiDocker, SiExpress, SiJsonwebtokens, SiMysql, SiNextdotjs, SiPostman, SiTailwindcss } from "react-icons/si";
 import { TbSparkles } from "react-icons/tb";
 
 /* ── data from resume ── */
 const skillGroups = [
   {
-    title: "Frontend",
+    title: "Languages & Frontend",
     summary: "Responsive interfaces, dashboards, and admin screens.",
     color: "cyan",
     skills: [
       { name: "HTML5",       icon: <FaHtml5 />,      color: "text-orange-400", level: 95 },
+      { name: "Java",        icon: <FaJsSquare />,   color: "text-orange-300", level: 80 },
       { name: "CSS3",        icon: <FaCss3Alt />,     color: "text-sky-400",    level: 92 },
       { name: "JavaScript",  icon: <FaJsSquare />,    color: "text-yellow-300", level: 90 },
+      { name: "TypeScript", icon: <FaJsSquare />,    color: "text-blue-300",   level: 80 },
       { name: "React.js",    icon: <FaReact />,       color: "text-cyan-300",   level: 92 },
       { name: "Next.js",     icon: <SiNextdotjs />,   color: "text-white",      level: 85 },
       { name: "Tailwind CSS",icon: <SiTailwindcss />, color: "text-teal-300",   level: 93 },
@@ -27,6 +29,10 @@ const skillGroups = [
     skills: [
       { name: "Node.js",    icon: <FaNodeJs />,         color: "text-emerald-400", level: 88 },
       { name: "Express.js", icon: <SiExpress />,         color: "text-slate-200",   level: 87 },
+      { name: "Nest.js",    icon: <SiExpress />,         color: "text-rose-300",    level: 75 },
+      { name: "MongoDB",    icon: <FaNodeJs />,           color: "text-emerald-300", level: 85 },
+      { name: "PostgreSQL", icon: <SiMysql />,            color: "text-sky-300",     level: 78 },
+      { name: "Prisma",     icon: <SiExpress />,           color: "text-violet-300",  level: 72 },
       { name: "JWT Auth",   icon: <SiJsonwebtokens />,   color: "text-yellow-200",  level: 85 },
       { name: "SQL / MySQL",icon: <SiMysql />,           color: "text-sky-300",     level: 84 },
     ],
@@ -39,7 +45,10 @@ const skillGroups = [
       { name: "Git",     icon: <FaGitAlt />,   color: "text-red-400",    level: 90 },
       { name: "GitHub",  icon: <FaGitAlt />,   color: "text-slate-100",  level: 90 },
       { name: "Postman", icon: <SiPostman />,  color: "text-orange-300", level: 88 },
-      { name: "Vercel",  icon: <SiVercel />,   color: "text-white",      level: 80 },
+      { name: "Docker",  icon: <SiDocker />,   color: "text-sky-300",    level: 72 },
+      { name: "VS Code", icon: <FaGitAlt />,   color: "text-blue-300",   level: 90 },
+      { name: "IntelliJ IDEA", icon: <FaGitAlt />, color: "text-pink-300", level: 82 },
+      { name: "Figma",   icon: <FaGitAlt />,   color: "text-violet-300", level: 75 },
     ],
   },
 ];
@@ -148,10 +157,10 @@ export default function Skills() {
   const [titleRef, titleInView] = useInView({ triggerOnce: true, threshold: 0.15 });
 
   const coreTech = [
-    "React.js", "Next.js", "Node.js", "Express.js",
-    "JavaScript", "HTML", "CSS", "Tailwind CSS",
-    "Bootstrap", "SQL", "MySQL", "REST APIs",
-    "JWT", "Git", "GitHub", "Postman",
+    "Java", "JavaScript", "TypeScript", "React.js", "Next.js",
+    "Redux Toolkit", "HTML", "CSS", "Tailwind CSS", "Bootstrap",
+    "Node.js", "Express.js", "Nest.js", "REST APIs", "MongoDB",
+    "PostgreSQL", "MySQL", "Prisma", "Docker", "Git", "GitHub", "Postman",
   ];
 
   return (
@@ -198,7 +207,7 @@ export default function Skills() {
             Full-Stack Expertise
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-xs leading-7 text-slate-400 sm:text-sm sm:leading-8">
-            A comprehensive tech stack refined over 1.8+ years of production development. From responsive frontends to scalable backends, from real-time dashboards to secure authentication systems.
+            Technologies used across full-stack web development, from responsive interfaces to backend APIs, databases, and deployment tools.
           </p>
         </motion.div>
 
