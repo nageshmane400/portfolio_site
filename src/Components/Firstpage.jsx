@@ -4,6 +4,9 @@ import { FiDownload, FiMail } from "react-icons/fi";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion.create(Link);
 
 const roles = [
   "Full-Stack Developer",
@@ -196,14 +199,14 @@ export default function Firstpage() {
               >
                 <FiDownload /> Download CV
               </motion.a>
-              <motion.a
+              <MotionLink
                 whileHover={{ scale: 1.05, y: -3 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact"
+                to="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/35 px-6 py-2.5 text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10 sm:px-7 sm:py-3"
               >
                 <FiMail /> Contact Me
-              </motion.a>
+              </MotionLink>
             </motion.div>
           </motion.div>
 

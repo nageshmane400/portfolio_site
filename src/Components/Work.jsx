@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { FiArrowUpRight, FiLayers, FiCalendar, FiMapPin } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion.create(Link);
 
 /* ── data from resume ── */
 const projects = [
@@ -218,13 +221,13 @@ export default function ProjectOverview() {
               <span className="text-cyan-400">MERN stack</span> and Redux Toolkit.
             </h1>
           </div>
-          <motion.a
-            href="/contact"
+          <MotionLink
+            to="/contact"
             whileHover={{ y: -4, boxShadow: "0 0 28px rgba(0,240,255,0.2)" }}
             className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-white/12 bg-white/5 px-4 py-2.5 text-sm font-bold text-cyan-100 backdrop-blur transition hover:border-cyan-300/45 sm:px-5 sm:py-3"
           >
             Contact Me <FiArrowUpRight />
-          </motion.a>
+          </MotionLink>
         </motion.div>
 
         {/* project cards */}
