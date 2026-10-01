@@ -63,14 +63,20 @@ export default function Contact() {
     e.preventDefault();
     setSending(true);
     emailjs
-      .send("service_047n2tj", "template_gh8mkea", formData, "IYEGKtO5QQu6w-khR")
+      .send("service_047n2tj", "template_bixr9ld", formData, "vtBYJiSinPZnnZ8TB")
       .then(() => {
         showTooltip("Message sent successfully! I'll get back to you soon.", "success");
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((err) => {
         console.error(err);
-        showTooltip("Failed to send. Please try again or email directly.", "error");
+        const reason = err?.text || err?.message;
+        showTooltip(
+          reason
+            ? `Email service error: ${reason}`
+            : "Failed to send. Please try again or email directly.",
+          "error"
+        );
       })
       .finally(() => setSending(false));
   };
